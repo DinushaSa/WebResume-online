@@ -15,7 +15,7 @@ body
 .user-box
 {
     top: 50%;
-    left: 50%;
+    left: 55%;
     transform: translate(-50%, -50%);
     position: absolute;
 }
@@ -29,11 +29,34 @@ body
     color: #fff;
     font-weight: bold;
     margin: 10px;
+    margin-left: -50px;
 }
 .user-box p
 {
     color: #fff;
+    margin-left: 90px;
+    font-size: large;
+    padding-bottom: 10px;
+    
+}
+.user-box p span::before
+{
+    content: "A Developer"; 
+    animation: animate step-end infinite 3s;
+}
+@keyframes animate { 
+  
+    0% { 
+        content: "A Developer"; 
+    } 
 
+    50% { 
+        content: "A Computer Science student"; 
+    } 
+
+    75% { 
+        content: "A writer"; 
+    } 
 }
 .scroll-btn 
 {
